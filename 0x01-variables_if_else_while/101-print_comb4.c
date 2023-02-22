@@ -1,17 +1,39 @@
 #include <stdio.h>
 
-int main() {
-  for (int i = 0; i < 10; i++) {
-    for (int j = i + 1; j < 10; j++) {
-      putchar(i + '0');   // print the first digit of the combination
-      putchar(j + '0');   // print the second digit of the combination
-      if (i != 8 || j != 9) {  // if this is not the last combination, print the separator
-        putchar(',');          // print the comma separator
-        putchar(' ');          // print the space separator
-      }
-    }
-  }
-  putchar('\n');      // print a newline character to move to a new line after printing all combinations
-  return 0;
+/**
+ * main - Entry point of the program
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+        int digit1 = 0;
+        int digit2;
+        int digit3;
+
+        while (digit1 < 8)
+        {
+                digit2 = digit1 + 1;
+                while (digit2 < 9)
+                {
+                        digit3 = digit2 + 1;
+                        while (digit3 < 10)
+                        {
+                                putchar(digit1 % 10 + '0');
+                                putchar(digit2 % 10 + '0');
+                                putchar(digit3 % 10 + '0');
+                                if (digit1 != 7 || digit2 != 8 || digit3 != 9)
+                                {
+                                        putchar(',');
+                                        putchar(' ');
+                                }
+                                digit3++;
+                        }
+                        digit2++;
+                }
+                digit1++;
+        }
+        putchar('\n');
+
+        return (0);
 }
 
