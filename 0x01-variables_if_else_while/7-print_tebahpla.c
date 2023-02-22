@@ -1,15 +1,21 @@
 #include <stdio.h>
 
-int main() {
-  // loop over the lowercase alphabet in reverse order
-  for(char letter = 'z'; letter >= 'a'; letter--) {
-    // print the current letter using putchar
-    putchar(letter);
-  }
-  
-  // print a newline character using putchar to move to a new line
-  putchar('\n');
-  
-  return 0;
+/**
+ * main - Prints the lowercase alphabet in reverse, followed by a new line.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int i;
+
+    for (i = 'z'; i >= 'a'; i--) /* loop through the lowercase alphabet in reverse */
+    {
+        putchar(i); /* print the character */
+    }
+
+    putchar('\n'); /* print newline character */
+
+    return (0);
 }
 
