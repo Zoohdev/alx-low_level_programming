@@ -1,25 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
- * Return: Always 0 (Success)
+ * main - Prints all single digit numbers of base 10 starting from 0.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-        putchar('0');
-        putchar('1');
-        putchar('2');
-        putchar('3');
-        putchar('4');
-        putchar('5');
-        putchar('6');
-        putchar('7');
-        putchar('8');
-        putchar('9');
+    int i;
 
-        putchar('\n');
+    for (i = 0; i < 10; i++) /* loop through single-digit numbers */
+    {
+        putchar(i + 48); /* print the number as a character */
+    }
 
-        return (0);
+    putchar('\n'); /* print newline character */
+
+    return (0);
 }
 
 
