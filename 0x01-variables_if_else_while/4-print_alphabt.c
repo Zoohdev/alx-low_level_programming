@@ -1,22 +1,25 @@
 #include <stdio.h>
 
-int main() {
-  char c = 'a';
-  
-  // loop over all lowercase letters from 'a' to 'z'
-  while(c <= 'z') {
-    // check if the letter is not 'q' and not 'e'
-    if(c != 'q' && c != 'e') {
-      // print the letter using putchar
-      putchar(c);
-    }
-    // increment the letter
-    c++;
-  }
-  
-  // print a newline character using putchar to move to a new line
-  putchar('\n');
-  
-  return 0;
+/**
+ * main - Entry point of the program
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+        char letter = 'a';
+
+        while (letter <= 'z')
+        {
+                if (letter != 'e' && letter != 'q')
+                {
+                        putchar(letter);
+                }
+                letter++;
+        }
+
+        putchar('\n');
+
+        return (0);
 }
+
 
