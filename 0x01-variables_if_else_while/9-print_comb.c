@@ -1,28 +1,25 @@
 #include <stdio.h>
 
+/**
+ * main - Prints all possible combinations of single-digit numbers.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-    int i, j, k;
+    int i;
 
-    for (i = 0; i < 8; i++)
+    for (i = 0; i < 10; i++) /* loop through single-digit numbers */
     {
-        for (j = i + 1; j < 9; j++)
+        putchar(i + '0'); /* print the number as a character */
+        if (i != 9) /* if it's not the last number */
         {
-            for (k = j + 1; k < 10; k++)
-            {
-                putchar(i + '0');
-                putchar(',');
-                putchar(' ');
-                putchar(j + '0');
-                putchar(',');
-                putchar(' ');
-                putchar(k + '0');
-                putchar(',');
-                putchar(' ');
-            }
+            putchar(','); /* print comma */
+            putchar(' '); /* print space */
         }
     }
-    putchar('\n');
+
+    putchar('\n'); /* print newline character */
 
     return (0);
 }
