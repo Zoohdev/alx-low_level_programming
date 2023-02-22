@@ -6,17 +6,20 @@
  */
 int main(void)
 {
-        int digit = 0;
-
-        while (digit < 10)
-        {
-                putchar(digit / 10 + '0');
-                putchar(digit % 10 + '0');
-                digit++;
-        }
+        putchar('0');
+        putchar('1');
+        putchar('2');
+        putchar('3');
+        putchar('4');
+        putchar('5');
+        putchar('6');
+        putchar('7');
+        putchar('8');
+        putchar('9');
 
         putchar('\n');
 
         return (0);
 }
+
 
