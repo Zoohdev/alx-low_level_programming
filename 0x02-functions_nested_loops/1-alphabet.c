@@ -5,14 +5,14 @@
  */
 void print_alphabet(void)
 {
-    char letter = 'a'; // Initialize a char variable 'letter' with value 'a'
+    char letter = 'a';
 
-    while (letter <= 'z') // Loop until 'letter' becomes greater than 'z'
+    while (letter <= 'z') 
     {
-        _putchar(letter); // Print the current value of 'letter'
-        letter++; // Increment 'letter' by 1
+        _putchar(letter); 
+        letter++;
     }
 
-    _putchar('\n'); // Print a newline character after the loop ends
+    _putchar('\n'); 
 }
 
