@@ -7,20 +7,17 @@
 
 int main(void)
 {
-    int num = 48;
+int num = 48;
 
-    while (num < 103)
-    {
-        if (num == 58)
-        {
-            num = 97;
-        }
-        putchar(num);
-        num++;
-    }
-
-    putchar('\n');
-
-    return (0);
+while (num < 103)
+{
+if (num == 58)
+{
+num = 97;
 }
-
+putchar(num);
+num++;
+}
+putchar('\n');
+return (0);
+}
