@@ -15,9 +15,9 @@ while (n <= 122)
 n++;
 }
 while (m <= 90)
-{	putchar(m);
+{	 putchar(m);
 m++;
 }
-putchar("\n")
+putchar("\n");
 return (0);
 }
