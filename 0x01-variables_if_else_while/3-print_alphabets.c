@@ -1,24 +1,21 @@
 #include <stdio.h>
 /*
- * main entry point
+ * main - Entry point
  *
- * Return Always 0 (Success)
+ * Description: Print the alphabet in upper and lowercase
+ *
+ * Return:  Always 0 (Success)
  *
  */
-int main(void)
-{
-char c = 'a';
-while (c <= 'z')
-{
-putchar(c);
-c++;
+main(void)
+{	int n = 97;
+int m = 65;
+while (n <= 122)
+{	putchar(n)
 }
-c = 'A';
-while (c <= 'Z')
-{
-putchar(c);
-c++;
+while (m <= 90)
+{	putchar(m);
 }
-putchar('\n');
+putchar("\n")
 return (0);
 }
