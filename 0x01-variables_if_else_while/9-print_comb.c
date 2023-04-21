@@ -7,20 +7,16 @@
  */
 int main(void)
 {
-    int i;
-
-    for (i = 0; i < 10; i++) /* loop through single-digit numbers */
-    {
-        putchar(i + '0'); /* print the number as a character */
-        if (i != 9) /* if it's not the last number */
-        {
-            putchar(','); /* print comma */
-            putchar(' '); /* print space */
-        }
-    }
-
-    putchar('\n'); /* print newline character */
-
-    return (0);
+int i;
+for (i = 0; i < 10; i++)
+{
+putchar(i + '0');
+if (i != 9)
+{
+putchar(',');
+putchar(' ');
 }
-
+}
+putchar('\n');
+return (0);
+}
