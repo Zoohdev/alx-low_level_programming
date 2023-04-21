@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Prints the lowercase alphabet in reverse, followed by a new line.
  *
@@ -7,15 +6,10 @@
  */
 int main(void)
 {
-    int i;
-
-    for (i = 'z'; i >= 'a'; i--) /* loop through the lowercase alphabet in reverse */
-    {
-        putchar(i); /* print the character */
-    }
-
-    putchar('\n'); /* print newline character */
-
-    return (0);
+int i;
+for (i = 'z'; i >= 'a'; i--)
+{	putchar(i);
 }
-
+putchar('\n');
+return (0);
+}
