@@ -17,4 +17,5 @@ t = a[i];
 a[i] = a[n];
 a[n] = t;
 }
+return (0);
 }
