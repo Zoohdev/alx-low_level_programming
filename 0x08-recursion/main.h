@@ -1,7 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
-
+/**
+ * File: main
+ *
+ * Desc: header file
+ */
 void _puts_recursion(char *s);
+int _putchar(char c);
 void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
 int factorial(int n);
